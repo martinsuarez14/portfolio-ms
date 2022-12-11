@@ -1,0 +1,136 @@
+:root {
+    --border-color: linear-gradient(
+        to right,
+        #b8136f,
+        #ea0063
+    );
+
+    --card-color: #222;
+}
+
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Barra de Navegación */
+.navbar {
+    background-color: #f4f4f4;
+}
+
+.icono-navbar {
+    width: 60px;
+
+}
+
+.icono-navbar img {
+    width: 100%;
+transition: all 0.3s;
+
+}
+.icono-navbar img:hover {
+    transform: scale(1.2);
+}
+
+
+.navbar-collapse {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-nav .contacto {
+    font-weight: 700;
+    color: #1b3039;
+    padding: 9px 25px;
+    background: #eceff1;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease-in;
+}
+
+.navbar-nav li .navegacion:hover {
+    color: #b8136f;
+}
+
+.navbar-nav .contacto:hover {
+    background-color: #b8136f;
+    color: #ffffff;
+    transform: scale(1.1);
+}
+
+.navbar-nav .contacto a:hover{
+    color: #f4f4f4;
+}
+
+.navbar-nav li a {
+    font-family: 'Lato', sans-serif;
+    font-size: 1.1rem;
+}
+
+/* Sección Hero */
+.imagen-desarrollador img {
+    width: 100%;
+}
+
+.presentacion {
+    z-index: 1;
+}
+
+.presentacion img{
+    max-width: 200px;
+    border: 5px solid #ea0063;
+}
+
+.presentacion h1 {
+    font-family: 'Rubik Dirt', cursive;
+}
+
+.presentacion h2 {
+    font-family: 'Space Mono', monospace;
+}
+
+/* Background hero */
+.custom-shape-divider-bottom-1670798596 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1670798596{
+    z-index: -1;
+}
+
+.custom-shape-divider-bottom-1670798596 svg {
+    position: relative;
+    display: block;
+    width: calc(261% + 1.3px);
+    height: 302px;
+    transform: rotateY(180deg);
+}
+
+.custom-shape-divider-bottom-1670798596 .shape-fill {
+    fill: #A35481;
+}
+
+
+/* Media Querys */
+@media screen and (max-width: 650px){
+
+    /* Barra de Navegación */
+    .navbar-collapse {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+}
